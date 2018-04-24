@@ -1,6 +1,7 @@
- SELECT   'abc' as server, 
-        'Netezza' as Database_Type,
+ SELECT   
         Current_DB as Database_Name,
+        'Netezza' as Database_Type,
+        'abc' as Database_server, 
         DBNAME as Schema_Name,
         TABLENAME as Table_Name,
         COLUMN_NAME as Column_Name,
