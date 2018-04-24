@@ -1,5 +1,5 @@
- SELECT     'abc' as server,
-        'xyz' as database_name,
+ SELECT 'xyz' as Database_name,
+        'abc' as Database_server,
         'DB2' as Database_Type,
         TBCreator as Schema_Name,
         TBNAME as Table_Name,
@@ -8,8 +8,7 @@
         COLTYPE as Column_Type,
         LONGLENGTH as Column_Length,
         Length as Column_Precision,
-        Scale as column_scale,
+        Scale as Column_scale,
         CURRENT_DATE as Run_Date
 FROM SYSIBM.SYSCOLUMNS
 ORDER BY TBCreator, TBName, Name
-
