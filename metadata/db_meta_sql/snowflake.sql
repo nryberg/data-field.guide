@@ -11,6 +11,6 @@ SELECT
         col.NUMERIC_PRECISION as Column_Precision,
         col.NUMERIC_PRECISION_RADIX AS Column_Scale,
         CURRENT_DATE as Run_Date
-FROM [Database].information_schema.columns as col
+FROM information_schema.columns as col
 WHERE TABLE_SCHEMA != 'INFORMATION_SCHEMA'
 ORDER BY TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME
