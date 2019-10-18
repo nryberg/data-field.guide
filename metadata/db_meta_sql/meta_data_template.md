@@ -1,6 +1,6 @@
 ## The base format is  
- 
-'   SELECT   
+``` 
+   SELECT   
         Current_DB as Database_Name,
         'Netezza' as Database_Type,
         'abc' as Database_server, 
@@ -15,4 +15,4 @@
         CURRENT_DATE as Run_Date
 FROM TABLE_COLS 
 ORDER BY DBNAME, TABLENAME, COLUMN_NAME
-
+```
